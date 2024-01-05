@@ -1,23 +1,20 @@
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.remote.RemoteWebDriver;
-import java.net.URL;
+import org.openqa.selenium.chrome.ChromeDriver;
 
-public class GoogleSearchtest {
+public class GoogleSearchTest {
 
     public static void main(String[] args) {
         try {
-            // Specify Selenium Grid Hub URL
-            URL gridUrl = new URL("http://localhost:4444/wd/hub"); 
+            // Set ChromeDriver path - adjust this to your ChromeDriver's location
+            System.setProperty("webdriver.chrome.driver", "C:\Jenkins\tools\chromedriver.exe");
             
-            // Define ChromeOptions
-            ChromeOptions options = new ChromeOptions();
-            
-            // Initialize WebDriver using RemoteWebDriver pointing to Grid Hub
-            WebDriver driver = new RemoteWebDriver(gridUrl, options);
+            // Initialize ChromeDriver
+            WebDriver driver = new ChromeDriver();
             
             // Open Google
             driver.get("https://www.google.com");
+            
+            // Optional: Perform actions on the webpage
             
             // Close the browser
             driver.quit();
