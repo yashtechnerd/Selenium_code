@@ -8,7 +8,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class SearchAction{
    public static void main(String[] args) {
-      System.setProperty("webdriver.chrome.driver", "C:\\Users\yashwanth.s\\Downloads\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
+      System.setProperty("webdriver.chrome.driver", "C:\\Users\\yashwanth.s\\Downloads\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
       WebDriver driver = new ChromeDriver();
       driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
       driver.get("https://www.google.com/");
