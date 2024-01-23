@@ -15,7 +15,7 @@ public class SearchAction {
     @Test
     public void OpenBrowser() {
         WebDriver driver;
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\yashwanth.s\\Downloads\\chromedriver-win64\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "/home/manoranjan.n/Downloads/chromedriver-linux64");
         ChromeOptions options = new ChromeOptions();
         //options.addArguments("headless");
         //options.addArguments("disable-gpu"); 
